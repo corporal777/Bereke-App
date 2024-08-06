@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filters_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background"
+    android:elevation="0dp"
+    app:contentInsetStart="0dp"
+    app:elevation="0dp"
+    app:layout_scrollFlags="scroll|enterAlways">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbarThumbVertical="@null">
+
+        <ScrollView
+            android:clipToPadding="false"
+            android:paddingHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbarThumbHorizontal="@null"
+            android:scrollbarThumbVertical="@null">
+
+            <LinearLayout
+                android:id="@+id/ln_filters_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    style="@style/BtnFilterStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:checked="true"
+                    android:textOff="Работа"
+                    android:textOn="Работа" />
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    style="@style/BtnFilterStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:checked="true"
+                    android:textOff="Подработка"
+                    android:textOn="Подработка" />
+
+
+                <androidx.appcompat.widget.AppCompatToggleButton
+                    style="@style/BtnFilterStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:checked="true"
+                    android:textOff="Халтура"
+                    android:textOn="Халтура" />
+            </LinearLayout>
+
+        </ScrollView>
+    </HorizontalScrollView>
+</androidx.appcompat.widget.Toolbar>

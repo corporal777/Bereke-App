@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/note_detail_margin_horizontal_"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/NoteDetailAdditionalInfoTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Категория:" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_category"
+                style="@style/NoteDetailAdditionalInfoMessageStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="69dp"
+                android:text="Работа/Вакансии" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/NoteDetailAdditionalInfoTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Подкатегория:" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_sub_category"
+                style="@style/NoteDetailAdditionalInfoMessageStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="Вакансия" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/NoteDetailAdditionalInfoTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Специальность:" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_work_speciality"
+                style="@style/NoteDetailAdditionalInfoMessageStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27.5dp"
+                android:text="Повар" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_work_schedule_title"
+                style="@style/NoteDetailAdditionalInfoTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="График работы:" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_work_schedule"
+                style="@style/NoteDetailAdditionalInfoMessageStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31.5dp"
+                android:text="5/2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/NoteDetailAdditionalInfoTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Опыт работы:" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_work_experience"
+                style="@style/NoteDetailAdditionalInfoMessageStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45.5dp"
+                android:text="Не важно" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_work_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/NoteDetailAdditionalInfoTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Комментарий:" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_work_comment"
+                style="@style/NoteDetailAdditionalInfoMessageStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Не важноvv vsdvdvsd csdmv;dlsvmdslvmdl;mvdsvl;dmvd;lvmdsvd;svk lkv;sdlvksd;lv" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="#BDBDBD" />
+
+    </LinearLayout>
+</layout>

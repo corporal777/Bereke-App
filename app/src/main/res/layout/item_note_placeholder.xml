@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="20dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="250dp"
+        android:orientation="vertical">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_base_color="@color/color_shimmer_background"
+            app:shimmer_colored="true"
+            app:shimmer_duration="2000"
+            app:shimmer_highlight_color="@color/color_shimmer_wave">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/iv_note_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/color_shimmer_background"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder" />
+
+                <View
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/background_note_placeholder" />
+
+                <View
+                    android:id="@+id/tv_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13.5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/background_note_placeholder" />
+
+                <View
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/background_note_placeholder" />
+
+                <View
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12.5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/background_note_placeholder" />
+
+                <View
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/background_note_placeholder" />
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+

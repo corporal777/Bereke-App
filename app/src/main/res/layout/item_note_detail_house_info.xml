@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/note_detail_margin_horizontal_"
+        android:layout_marginTop="20dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/NoteDetailAdditionalInfoTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Категория:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_category"
+            style="@style/NoteDetailAdditionalInfoMessageStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Москва" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/NoteDetailAdditionalInfoTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Подкатегория:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_category" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_sub_category"
+            style="@style/NoteDetailAdditionalInfoMessageStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_category"
+            tools:text="Царицыно" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/NoteDetailAdditionalInfoTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Тип объекта:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_sub_category" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_house_type"
+            style="@style/NoteDetailAdditionalInfoMessageStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_sub_category"
+            tools:text="Квартира" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_house_rooms_title"
+            style="@style/NoteDetailAdditionalInfoTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Кол-во комнат:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_house_type" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_house_rooms"
+            style="@style/NoteDetailAdditionalInfoMessageStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_house_type"
+            tools:text="5" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_house_term_title"
+            style="@style/NoteDetailAdditionalInfoTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Срок сдачи:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_house_rooms" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_house_term"
+            style="@style/NoteDetailAdditionalInfoMessageStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_house_rooms"
+            tools:text="На 5 месяцев" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_house_comment_title"
+            style="@style/NoteDetailAdditionalInfoTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Комментарий:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_house_term" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_house_comment"
+            style="@style/NoteDetailAdditionalInfoMessageStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_house_comment_title"
+            tools:text="На 5 месяцев" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="#BDBDBD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_house_comment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

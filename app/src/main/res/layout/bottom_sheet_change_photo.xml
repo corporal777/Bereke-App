@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:background="@android:color/transparent"
+    tools:ignore="MissingPrefix">
+
+
+    <LinearLayout
+        android:id="@+id/ln_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/btn_background_white"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_first_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_text_selectable"
+            android:fontFamily="@font/noto_sans_semibold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minHeight="52dp"
+            android:text="@string/open_gallery"
+            android:textColor="@color/app_main_color"
+            android:textSize="16.5sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#BDBDBD" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_second_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_text_selectable"
+            android:fontFamily="@font/noto_sans_semibold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minHeight="52dp"
+            android:text="@string/open_camera"
+            android:textColor="@color/app_main_color"
+            android:textSize="16.5sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#BDBDBD" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn_third_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_text_selectable"
+            android:fontFamily="@font/noto_sans_semibold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minHeight="52dp"
+            android:text="@string/open_camera"
+            android:textColor="@color/app_main_color"
+            android:textSize="16.5sp" />
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cancel"
+        style="@style/BtnWhiteStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/noto_sans_semibold"
+        android:minHeight="52dp"
+        android:textColor="@color/app_main_color"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ln_buttons" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

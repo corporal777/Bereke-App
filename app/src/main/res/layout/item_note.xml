@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="10dp"
+        android:foreground="@drawable/custom_btn_text_selectable"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="264dp">
+
+
+            <ImageView
+                android:id="@+id/iv_note_image"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/dev1" />
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/view_status_mask"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:alpha="0.5"
+                android:background="@color/black"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:visibility="gone"
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/background_not_active_status"
+                android:fontFamily="@font/noto_sans_medium"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="3dp"
+                tools:text="Не активно"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_note_image"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <org.wilderkek.bereke.ui.views.ActionLikeView
+                android:id="@+id/like_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--                android:layout_width="30dp"-->
+            <!--                android:id="@+id/cl_like"-->
+            <!--                android:layout_height="30dp"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:layout_marginEnd="5dp"-->
+            <!--                android:background="@drawable/circle_alpha_background"-->
+            <!--                android:foreground="@drawable/custom_btn_toolbar_selectable"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent">-->
+
+
+            <!--                <androidx.appcompat.widget.AppCompatImageView-->
+            <!--                    android:layout_width="23dp"-->
+            <!--                    android:layout_height="23dp"-->
+            <!--                    android:paddingTop="2dp"-->
+            <!--                    android:tint="@color/app_main_color"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                    app:layout_constraintStart_toStartOf="parent"-->
+            <!--                    app:layout_constraintTop_toTopOf="parent"-->
+            <!--                    app:srcCompat="@drawable/ic_like_empty" />-->
+
+            <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/noto_sans_bold"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/iv_note_image"
+                tools:text="Работа, Подработки" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:fontFamily="@font/noto_sans_bold"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_category"
+                tools:text="1800" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="3dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/noto_sans_regular"
+                android:includeFontPadding="false"
+                android:lineHeight="16sp"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@id/tv_location"
+                app:layout_constraintTop_toBottomOf="@id/tv_salary"
+                tools:text="@string/test_text_long" />
+
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/noto_sans_regular"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="@color/item_note_date_text_color"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/tv_date"
+                tools:text="Не указано" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/noto_sans_regular"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="@color/item_note_date_text_color"
+                android:textSize="11.5sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="22.01.2021" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</layout>

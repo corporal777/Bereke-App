@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/title_city" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_city"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.CitiesAutoCompleteTextView
+                android:id="@+id/et_city"
+                style="@style/CustomTextInputEditText"
+                android:inputType="textCapSentences"
+                app:customHint="@string/enter_city" />
+
+            <TextView
+                android:id="@+id/tv_city_required"
+                android:textColor="@color/app_main_color"
+                style="@style/CreateNoteFieldsTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:text="@string/require_city_title" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_region" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_region"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.CustomInputEditText
+                android:id="@+id/et_region"
+                style="@style/CustomTextInputEditText"
+                android:inputType="textCapSentences|textNoSuggestions"
+                app:customHint="@string/enter_region" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/metro_station" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_station"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.CustomInputEditText
+                android:id="@+id/et_station"
+                style="@style/CustomTextInputEditText"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                app:customHint="@string/enter_station_name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="13dp"
+            android:layout_marginTop="20dp"
+            android:background="#BDBDBD" />
+
+    </LinearLayout>
+
+
+</layout>

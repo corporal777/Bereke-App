@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/sub_category_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_sub_category"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:endIconDrawable="@drawable/ic_dropdown"
+            app:endIconMode="dropdown_menu"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.CustomAutoCompleteTextView
+                android:id="@+id/et_sub_category"
+                style="@style/CustomTextInputEditText"
+                android:inputType="textCapSentences"
+                app:customHint="@string/enter_note_sub_category" />
+
+            <TextView
+                android:visibility="gone"
+                style="@style/CreateNoteFieldsTitleStyle"
+                android:id="@+id/tv_note_sub_category_required"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/require_sub_category_title"
+                android:textColor="@color/app_main_color"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:includeFontPadding="false"
+            android:text="@string/work_schedule" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_schedule"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:endIconDrawable="@drawable/ic_dropdown"
+            app:endIconMode="dropdown_menu"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.CustomAutoCompleteTextView
+                android:id="@+id/et_schedule"
+                style="@style/CustomTextInputEditText"
+                android:inputType="textCapSentences"
+                app:customHint="@string/enter_work_schedule" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/work_experience" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_experience"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.CustomInputEditText
+                android:id="@+id/et_experience"
+                style="@style/CustomTextInputEditText"
+                android:inputType="textCapSentences|textNoSuggestions"
+                app:customHint="@string/enter_work_experience" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/work_speciality" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_speciality"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.SpecialitiesAutoCompleteTextView
+                android:id="@+id/et_speciality"
+                style="@style/CustomTextInputEditText"
+                android:inputType="textCapSentences|textNoSuggestions"
+                app:customHint="@string/enter_work_speciality" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/work_salary" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_salary"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.CustomInputEditText
+                android:id="@+id/et_salary"
+                style="@style/CustomTextInputEditText"
+                android:inputType="textCapSentences|textNoSuggestions"
+                app:customHint="@string/enter_work_salary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/work_comment" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_comment"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.CustomInputEditText
+                android:id="@+id/et_comment"
+                style="@style/CustomTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:maxLines="150"
+                android:minHeight="100dp"
+                android:singleLine="false"
+                app:customHint="@string/enter_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="13dp"
+            android:layout_marginTop="20dp"
+            android:background="#BDBDBD" />
+
+    </LinearLayout>
+
+
+</layout>

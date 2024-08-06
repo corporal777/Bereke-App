@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_whatsapp"
+        style="@style/CustomTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        app:errorIconDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <org.wilderkek.bereke.ui.views.CustomInputEditText
+            android:id="@+id/et_phone"
+            style="@style/CustomTextInputEditText"
+            android:inputType="phone"
+            android:textSize="16sp"
+            app:customHint="@string/enter_phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="8dp"
+        app:srcCompat="@drawable/ic_delete"
+        android:background="@drawable/custom_btn_text_selectable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/til_whatsapp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/item_note_date_text_color" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

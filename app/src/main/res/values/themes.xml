@@ -1,0 +1,307 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TamTam" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorAccent">@color/app_main_color</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="colorPrimary">@color/app_main_color</item>
+        <item name="colorPrimaryDark">@color/app_main_color</item>
+        <item name="colorPrimaryVariant">@color/purple_200</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!--  Secondary brand color.  -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="android:statusBarColor">@color/app_main_color</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowBackground">@color/main_background</item>
+    </style>
+
+<!--    <style name="Theme.Splash" parent="Theme.SplashScreen">-->
+<!--        <item name="android:statusBarColor">@color/main_background</item>-->
+<!--        <item name="android:navigationBarColor">@color/white</item>-->
+<!--        <item name="android:windowBackground">@drawable/app_splash_background</item>-->
+<!--    </style>-->
+
+    <style name="Theme.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/main_background</item>
+<!--        <item name="windowSplashScreenAnimatedIcon">@mipmap/app_splash_adaptive_round</item>-->
+        <item name="postSplashScreenTheme">@style/Theme.TamTam</item>
+    </style>
+
+
+    <style name="RoundedCornerButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="background">@drawable/custom_toast_error</item>
+        <item name="colorButtonNormal">#1a237e</item>
+        <item name="colorControlHighlight">#673ab7</item>
+    </style>
+
+    <style name="MyCardViewStyle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">7dp</item>
+        <item name="cardBackgroundColor">#FFFFFF</item>
+    </style>
+
+
+    <style name="CircularProgress" parent="Theme.MaterialComponents.Light">
+        <item name="colorAccent">@color/app_main_color</item>
+    </style>
+
+    <style name="GalleryStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorPrimary">@color/trans</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="CustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="queryBackground">@drawable/search_background</item>
+        <item name="submitBackground">@drawable/search_background</item>
+    </style>
+
+
+    <!--    new view styles-->
+
+    <style name="CustomPopupMenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="textAppearanceLargePopupMenu">@style/PopupMenuTextAppearanceLarge</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/PopupMenuTextAppearanceLarge</item>
+        <item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextAppearanceSmall</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/PopupMenuTextAppearanceSmall</item>
+        <item name="android:windowAnimationStyle">@style/PopupAnimationStyle</item>
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="PopupMenuTextAppearanceSmall" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+        <item name="android:textColor">#000000</item>
+        <item name="fontFamily">@font/noto_sans_medium</item>
+    </style>
+
+    <style name="PopupMenuTextAppearanceLarge" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+        <item name="android:textColor">#000000</item>
+        <item name="fontFamily">@font/noto_sans_medium</item>
+    </style>
+
+    <style name="PopupAnimationStyle">
+        <item name="android:windowEnterAnimation">@anim/fab_show</item>
+        <item name="android:windowExitAnimation">@anim/fab_hide</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/background_bottom_sheet</item>
+    </style>
+
+    <style name="TransparentBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="TransparentBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/TransparentBottomSheetStyle</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+    <style name="MainBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@drawable/bottom_navigation_colors</item>
+        <item name="itemTextColor">@drawable/bottom_navigation_colors</item>
+        <item name="itemIconSize">@dimen/bottom_nav_icon_size</item>
+        <item name="background">@color/white</item>
+        <item name="itemBackground">@color/white</item>
+        <item name="itemTextAppearanceActive">@style/CustomNavigationView.TextAppearance</item>
+        <item name="itemTextAppearanceInactive">@style/CustomNavigationView.TextAppearance</item>
+    </style>
+
+    <style name="CustomNavigationView.TextAppearance" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">10sp</item>
+        <item name="android:itemPadding">0dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="fontFamily">@font/noto_sans_medium</item>
+    </style>
+
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxBackgroundColor">@color/input_field_color</item>
+        <item name="boxStrokeColor">@color/input_field_color</item>
+        <item name="hintEnabled">false</item>
+        <item name="errorTextColor">@color/error_text_color</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+    </style>
+
+    <style name="CustomTextInputEditText">
+        <item name="fontFamily">@font/noto_sans_regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:minHeight">51dp</item>
+        <item name="android:textColorHint">@color/input_field_hint_color</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:backgroundTint">@color/background_input_field</item>
+        <item name="colorControlActivated">@color/app_main_color</item>
+        <item name="android:colorControlActivated">@color/app_main_color</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CustomTextInputHintStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/noto_sans_regular</item>
+    </style>
+
+    <style name="AuthTitleTextStyle">
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/noto_sans_semibold</item>
+        <item name="android:textSize">19sp</item>
+
+    </style>
+
+    <style name="InputTextTitleStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/color_of_textview_border</item>
+        <item name="android:fontFamily">@font/noto_sans_regular</item>
+        <item name="android:textSize">13sp</item>
+
+    </style>
+
+    <style name="CreateNoteFieldsTitleStyle">
+        <item name="android:textColor">@color/color_of_textview_border</item>
+        <item name="fontFamily">@font/noto_sans_regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="NoteDetailAdditionalInfoTitleStyle">
+        <item name="android:textColor">@color/message_information_text_color</item>
+        <item name="fontFamily">@font/noto_sans_regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="NoteDetailAdditionalInfoMessageStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/noto_sans_medium</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="BtnMainStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/main_btn_color</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:minHeight">49dp</item>
+        <item name="android:background">@drawable/custom_btn_main_selectable</item>
+        <item name="fontFamily">@font/noto_sans_extra_bold</item>
+        <item name="android:textSize">16.5sp</item>
+    </style>
+
+    <style name="BtnStrokeStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/main_btn_color</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:minHeight">49dp</item>
+        <item name="android:background">@drawable/custom_btn_stroke_selectable</item>
+        <item name="fontFamily">@font/noto_sans_extra_bold</item>
+        <item name="android:textSize">16.5sp</item>
+    </style>
+
+    <style name="BtnSmokeStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:minHeight">49dp</item>
+        <item name="android:background">@drawable/custom_btn_smoke_selectable</item>
+        <item name="fontFamily">@font/noto_sans_extra_bold</item>
+        <item name="android:textSize">16.5sp</item>
+    </style>
+
+    <style name="BtnWhiteStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/white_btn_color</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:minHeight">49dp</item>
+        <item name="android:background">@drawable/custom_btn_white_selectable</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textSize">16.5sp</item>
+    </style>
+
+    <style name="BtnCustomTabStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/text_color_custom_tab</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/noto_sans_semibold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:minHeight">34dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="BtnFilterStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="textAllCaps">false</item>
+        <item name="fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textColor">@color/text_color_filter</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:minHeight">35dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:background">@drawable/background_filter</item>
+        <item name="android:layout_marginHorizontal">5dp</item>
+    </style>
+
+    <style name="ProfileSectionsTextStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/custom_btn_text_selectable</item>
+        <item name="fontFamily">@font/noto_sans_semibold</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:paddingVertical">13dp</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textSize">16.5sp</item>
+    </style>
+
+
+    <style name="CustomCheckboxStyle">
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:background">@color/trans</item>
+        <item name="android:button">@drawable/drawable_checkbox</item>
+    </style>
+
+</resources>

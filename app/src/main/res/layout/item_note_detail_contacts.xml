@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/note_detail_margin_horizontal_"
+        android:layout_marginTop="20dp">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/NoteDetailAdditionalInfoTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Номер телефона:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_phone_number"
+            style="@style/NoteDetailAdditionalInfoMessageStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="+79998887766"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/NoteDetailAdditionalInfoTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Номер в Whatsapp:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone_number" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_whats_app"
+            style="@style/NoteDetailAdditionalInfoMessageStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="+79998887766"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone_number" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_call"
+            style="@style/BtnStrokeStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/call"
+            android:textColor="@color/app_main_color"
+            app:layout_constraintTop_toBottomOf="@id/tv_whats_app" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_write_whatsapp"
+            style="@style/BtnMainStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/write_on_whatsapp"
+            app:layout_constraintTop_toBottomOf="@id/btn_call" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ln_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toTopOf="@id/divider"
+            app:layout_constraintTop_toBottomOf="@id/btn_write_whatsapp">
+
+
+            <ImageView
+                android:id="@+id/iv_user_photo"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/avatar_empty_square"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/noto_sans_bold"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:textColor="@color/app_main_color"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toTopOf="@id/tv_user_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_user_photo"
+                app:layout_constraintTop_toTopOf="@id/iv_user_photo"
+                tools:text="Mads Mikkelsen" />
+
+            <TextView
+                android:id="@+id/tv_user_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/noto_sans_bold"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:textColor="@color/app_main_color"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_user_photo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_user_photo"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_name"
+                tools:text="Mads Mikkelsen" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#BDBDBD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ln_user" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

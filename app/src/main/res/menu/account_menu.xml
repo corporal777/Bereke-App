@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/change_name"
+        android:icon="@drawable/ic_edit"
+        android:title="  Изменить имя" />
+
+    <item
+        android:id="@+id/change_photo"
+        android:icon="@drawable/ic_change_photo"
+        android:title="  Изменить фото" />
+</menu>

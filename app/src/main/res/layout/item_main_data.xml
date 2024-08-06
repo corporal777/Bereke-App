@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/note_category" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_note_category"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:endIconDrawable="@drawable/ic_dropdown"
+            app:endIconMode="dropdown_menu"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.CustomAutoCompleteTextView
+                android:id="@+id/et_note_category"
+                style="@style/CustomTextInputEditText"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textCapSentences|textNoSuggestions"
+                app:customHint="@string/enter_note_category" />
+
+            <TextView
+                android:id="@+id/tv_note_category_required"
+                style="@style/CreateNoteFieldsTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/require_category_title"
+                android:textColor="@color/app_main_color"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/note_name" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_note_name"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.CustomInputEditText
+                android:id="@+id/et_note_name"
+                style="@style/CustomTextInputEditText"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:maxLines="150"
+                android:singleLine="false"
+                app:customHint="@string/enter_note_name" />
+
+
+            <TextView
+                android:id="@+id/tv_note_name_required"
+                style="@style/CreateNoteFieldsTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/require_note_name_title"
+                android:textColor="@color/app_main_color"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/note_description" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_note_description"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            app:errorIconDrawable="@null"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <org.wilderkek.bereke.ui.views.CustomInputEditText
+                android:id="@+id/et_note_description"
+                style="@style/CustomTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:maxLines="150"
+                android:minHeight="100dp"
+                android:singleLine="false"
+                app:customHint="@string/enter_note_description" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/phone_number" />
+
+        <LinearLayout
+            android:id="@+id/ln_call_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_add_call_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_btn_text_selectable"
+            android:fontFamily="@font/noto_sans_semibold"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="0dp"
+            android:paddingVertical="5dp"
+            android:text="@string/add_phone"
+            android:textColor="@color/app_main_color"
+            android:textSize="15.5sp" />
+
+
+        <TextView
+            style="@style/CreateNoteFieldsTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/whatsapp_number" />
+
+        <LinearLayout
+            android:id="@+id/ln_whatsapp_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_add_whats_app_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_btn_text_selectable"
+            android:fontFamily="@font/noto_sans_semibold"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="0dp"
+            android:paddingVertical="5dp"
+            android:text="@string/add_phone"
+            android:textColor="@color/app_main_color"
+            android:textSize="15.5sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginHorizontal="13dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#BDBDBD" />
+    </LinearLayout>
+
+
+</layout>

@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "935191350102",
+    "firebase_url": "https://tam-tam-8b2a7-default-rtdb.firebaseio.com",
+    "project_id": "tam-tam-8b2a7",
+    "storage_bucket": "tam-tam-8b2a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935191350102:android:0a82a3abdb9bf49e2424f7",
+        "android_client_info": {
+          "package_name": "org.otunjargych.tamtam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935191350102-gflnbus43rlmal8uaqclrh53j26i2m0h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.otunjargych.tamtam",
+            "certificate_hash": "e63471910d9caf0ce4ef5ae45fd737c61c37aeb0"
+          }
+        },
+        {
+          "client_id": "935191350102-r9ml6206clbncs1vsajauaosnabe6sjf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.otunjargych.tamtam",
+            "certificate_hash": "b121766621a55cc068101b254ded8d636d96fff2"
+          }
+        },
+        {
+          "client_id": "935191350102-mtisf0auajgkq95oehjo7d39u7f201ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQUhGSSDgwKt7BXSFXRe6Q2MX9aodhtBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935191350102-mtisf0auajgkq95oehjo7d39u7f201ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935191350102:android:09dbaf6c4e6bbc8b2424f7",
+        "android_client_info": {
+          "package_name": "org.wilderkek.bereke"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935191350102-471r7m5684ml42iuc93tfmmrbgr3425i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.wilderkek.bereke",
+            "certificate_hash": "e63471910d9caf0ce4ef5ae45fd737c61c37aeb0"
+          }
+        },
+        {
+          "client_id": "935191350102-mtisf0auajgkq95oehjo7d39u7f201ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQUhGSSDgwKt7BXSFXRe6Q2MX9aodhtBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935191350102-mtisf0auajgkq95oehjo7d39u7f201ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

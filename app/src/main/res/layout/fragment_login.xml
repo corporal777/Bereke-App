@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_background">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/top_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.2" />
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="190dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_logo_app"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/top_guideline" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/AuthTitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/auth_login_title"
+                app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_login"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                app:errorIconDrawable="@null"
+                app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+                <org.wilderkek.bereke.ui.views.CustomInputEditText
+                    android:id="@+id/et_login"
+                    app:customHint="@string/phone_number_or_email"
+                    style="@style/CustomTextInputEditText"
+                    android:inputType="textEmailAddress|textNoSuggestions" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                style="@style/CustomTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="15dp"
+                app:endIconMode="password_toggle"
+                app:errorIconDrawable="@null"
+                app:layout_constraintTop_toBottomOf="@+id/til_login">
+
+                <org.wilderkek.bereke.ui.views.CustomInputEditText
+                    android:id="@+id/et_password"
+                    style="@style/CustomTextInputEditText"
+                    app:customHint="@string/password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_enter"
+                style="@style/BtnMainStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/enter_auth"
+                app:layout_constraintTop_toBottomOf="@id/til_password" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_btn_text_selectable"
+                android:fontFamily="@font/noto_sans_semibold"
+                android:gravity="center"
+                android:textColor="@color/app_main_color"
+                android:paddingHorizontal="20dp"
+                android:textSize="15sp"
+                android:paddingVertical="5dp"
+                android:text="@string/register"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_enter" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

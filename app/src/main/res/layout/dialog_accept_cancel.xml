@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:background="@drawable/dialog_rounded_corners"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:includeFontPadding="false"
+        tools:text="Испрользовать данные Google аккаунта?"
+        android:textColor="@color/app_main_color"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/noto_sans_medium"
+        android:includeFontPadding="false"
+        tools:text="Поля ввода для регистрации будут заполнены данными вашего аккаунта. Приложение не получает доступ к паролю аккаунта."
+        android:textColor="@color/color_of_text_fragment_new_ad"
+        android:textSize="15.5sp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAccept"
+        style="@style/BtnMainStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/accept" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCancel"
+        style="@style/BtnMainStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/cancel" />
+
+
+</LinearLayout>

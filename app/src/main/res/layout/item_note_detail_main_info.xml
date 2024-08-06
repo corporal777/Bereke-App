@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/note_detail_margin_horizontal_"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/eye"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_seen_counter"
+                app:layout_constraintBottom_toBottomOf="@id/tv_viewings"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_viewings"
+                app:tint="@color/app_main_color" />
+
+
+            <TextView
+                android:id="@+id/tv_viewings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/noto_sans_bold"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/eye"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="12" />
+
+
+            <ImageView
+                android:id="@+id/heart"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_liked_ads"
+                app:layout_constraintBottom_toBottomOf="@id/tv_likes"
+                app:layout_constraintLeft_toRightOf="@id/tv_viewings"
+                app:layout_constraintTop_toTopOf="@id/tv_likes"
+                app:tint="@color/app_main_color" />
+
+            <TextView
+                android:id="@+id/tv_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/noto_sans_bold"
+                android:includeFontPadding="false"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/heart"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="12" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/noto_sans_extra_bold"
+            android:includeFontPadding="false"
+            android:textColor="@color/app_main_color"
+            android:textSize="23sp"
+            tools:text="50 000" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/noto_sans_semibold"
+            android:includeFontPadding="false"
+            android:textColor="@color/app_main_color"
+            android:textSize="19sp"
+            tools:text="Работник торгового зала" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="#BDBDBD" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/noto_sans_medium"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="- В крупный продуктовый магазин требуются работники торгового зала\nУсловия:\n• Оформление по ТК РФ;\n• Выплаты 2 раза в месяц\n• График: 6/1;\n• Бесплатная фирменная спецодежда, -30% скидка на продукцию магазина.\nТребования:\n• Полный пакет документов;\n• Мед. Книжка или готовность её оформить.\nОбязанности:\n• Выкладывать товар в зале;\nПо всем вопросам звоните или пишите в WhatsApp: 8-903-503-52-71" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="20dp"
+            android:background="#BDBDBD" />
+
+    </LinearLayout>
+</layout>

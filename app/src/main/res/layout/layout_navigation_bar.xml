@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_bar_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+
+    <View
+        android:id="@+id/nav_bar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#BDBDBD"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ln_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nav_bar_divider">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/main_bottom_nav_view"
+            style="@style/MainBottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu_bottom_navigation" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_new_note"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_btn_toolbar_selectable"
+        android:src="@drawable/fab_background_new"
+        app:layout_constraintBottom_toBottomOf="@id/ln_nav_bar"
+        app:layout_constraintEnd_toEndOf="@id/ln_nav_bar"
+        app:layout_constraintStart_toStartOf="@id/ln_nav_bar"
+        app:layout_constraintTop_toTopOf="@id/ln_nav_bar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

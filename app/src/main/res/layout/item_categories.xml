@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:overScrollMode="never"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbarThumbVertical="@null">
+
+        <ScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollIndicators="none"
+            android:scrollbarThumbHorizontal="@null"
+            android:scrollbarThumbVertical="@null">
+
+            <include
+                android:id="@+id/category"
+                layout="@layout/category" />
+        </ScrollView>
+    </HorizontalScrollView>
+</layout>

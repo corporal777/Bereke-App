@@ -1,0 +1,294 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+
+    <string name="app_name">Bereke</string>
+    <string name="work_category">Работа, Вакансии</string>
+    <string name="trans_category">Транспорт, Перевозки</string>
+    <string name="buy_sell_category">Продажа, Покупка</string>
+    <string name="house_category">Квартиры, Гостиницы</string>
+    <string name="health_category">Медицина, Красота</string>
+    <string name="no_connection">Нет Интернет соединения!</string>
+    <string name="search" translatable="false">   Поиск ...</string>
+    <string name="metro_stations">Станции метро</string>
+    <string name="metro_station">Станция метро</string>
+    <string name="app_main_name">Tam Tam</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="full_time_work">Работа</string>
+    <string name="short_time_work">Подработки</string>
+    <string name="vacancy">Вакансии</string>
+    <string name="Beauty">Красота</string>
+    <string name="Medicine">Медицина</string>
+    <string name="transportation">Перевозки</string>
+    <string name="transport">Транспорт</string>
+    <string name="buy">Продажа</string>
+    <string name="sell">Покупка</string>
+    <string name="choose_category">Выберите категорию:</string>
+    <string name="actual_notes">Недавние объявления</string>
+    <string name="favorite_notes_tite">Объявления в избранном</string>
+    <string name="title">Заголовок:</string>
+    <string name="salary">Оплата:</string>
+    <string name="text_of_work">Описание:</string>
+    <string name="address">Улица, дом:</string>
+    <string name="address_title">Адрес</string>
+    <string name="add">Добавить</string>
+    <string name="find">Найти</string>
+    <string name="need_in_work">Нужна подработка</string>
+    <string name="looking_for_work">Ищу работу</string>
+
+    <string name="first_name">Имя</string>
+    <string name="enter_first_name">Введите имя</string>
+    <string name="last_name">Фамилия</string>
+
+
+    <string name="note_category">Категория объявления</string>
+    <string name="enter_note_category">Выберите категорию</string>
+    <string name="note_name">Название объявления</string>
+    <string name="enter_note_name">Введите название</string>
+    <string name="note_title">Заголовок объявления</string>
+    <string name="enter_note_title">Введите заголовок</string>
+    <string name="note_description">Описание объявления</string>
+    <string name="enter_note_description">Введите описание</string>
+
+    <string name="work_schedule">График работы</string>
+    <string name="enter_work_schedule">Выберите график работы</string>
+
+    <string name="work_experience">Опыт работы</string>
+    <string name="enter_work_experience">Введите опыт работы</string>
+
+    <string name="work_speciality">Специальность</string>
+    <string name="enter_work_speciality">Введите специальность</string>
+
+    <string name="work_salary">Заработная плата</string>
+    <string name="enter_work_salary">Введите сумму</string>
+
+    <string name="house_type">Тип объекта</string>
+    <string name="enter_house_type">Выберите тип объекта</string>
+
+    <string name="house_price">Цена</string>
+    <string name="enter_house_price">Введите цену</string>
+
+    <string name="house_rooms">Количество комнат</string>
+    <string name="enter_house_rooms">Введите количество</string>
+
+    <string name="house_term">На какой период</string>
+    <string name="enter_house_term">Введите период</string>
+
+
+    <string name="personal_data">Персональные данные</string>
+    <string name="main_information">Основная информация</string>
+    <string name="additional_information">Дополнительная информация</string>
+    <string name="contacts_data">Контактные данные</string>
+    <string name="enter_last_name">Введите фамилию</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="your_login">Ваш логин</string>
+    <string name="enter_phone_number">Введите номер телефона</string>
+    <string name="enter_phone">Введите номер</string>
+    <string name="enter_email">Введите email</string>
+    <string name="enter_login">Введите логин</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="current_password">Текущий пароль</string>
+    <string name="enter_city">Введите город</string>
+    <string name="title_city">Город</string>
+    <string name="title_region">Район</string>
+    <string name="enter_region">Введите район</string>
+    <string name="phone_number_or_email">Номер телефона или email:</string>
+    <string name="whatsapp_number">Номер телефона для WhatsApp</string>
+    <string name="number">Номер:</string>
+    <string name="fields_cannot_be_empty">Поля не могут быть пустыми!</string>
+    <string name="login">Логин:</string>
+    <string name="password">Пароль</string>
+    <string name="retry_password">Повторите пароль:</string>
+    <string name="email">Электронная почта:</string>
+    <string name="Beauty_saloon">Салон красоты</string>
+    <string name="dentistry">Стоматологии</string>
+    <string name="polyclinic">Поликлиники</string>
+    <string name="enter_auth">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+
+    <string name="account">Аккаунт</string>
+    <string name="change_name">Изменить имя</string>
+    <string name="success">Успешно!</string>
+    <string name="empty_fields">Заполните все поля!</string>
+    <string name="empty_field">Заполните поле!</string>
+    <string name="require_enter">Обязательно к заполнению</string>
+    <string name="require_category_title">Необходимо выбрать категорию. Поле обязательно к заполнению</string>
+    <string name="require_note_name_title">Необходимо ввести название. Поле обязательно к заполнению</string>
+    <string name="require_city_title">Необходимо выбрать город. Поле обязательно к заполнению</string>
+    <string name="require_sub_category_title">Необходимо выбрать подкатегорию. Поле обязательно к заполнению</string>
+    <string name="enter_current_password_for_security_title">Введите свой текущий пароль. Это необходимая мера для обеспечения безопасности.\nВ случае если забыли свой пароль, обратитесь в службу поддержки.</string>
+    <string name="enter_new_password_for_security_title">Введите новый пароль. Он будет использоваться для авторизации.</string>
+    <string name="enter_new_login_for_security_title">Введите новый логин. Он будет использоваться для авторизации.</string>
+    <string name="full_work">Постоянная работа</string>
+    <string name="publicate">Опубликовать</string>
+    <string name="ad_was_pushed">Объявление опубликовано</string>
+    <string name="enter_your_phone_number">Введите номер телефона</string>
+    <string name="auth_login_title">Введите логин и пароль</string>
+    <string name="and_password">и пароль</string>
+    <string name="accept">Принять</string>
+    <string name="go_home">На главную</string>
+    <string name="yes">Да</string>
+    <string name="change_city">Изменить город</string>
+    <string name="name_city">Название города</string>
+
+
+    <string name="home">Главная</string>
+    <string name="registration">Регистрация</string>
+    <string name="authorization">Авторизация</string>
+    <string name="profile">Профиль</string>
+    <string name="city">Выбор города</string>
+    <string name="new_note">Объявление</string>
+    <string name="my_notes">Мои объявления</string>
+    <string name="favorite_notes">Избранное</string>
+    <string name="edit_note">Редактирование</string>
+
+    <string name="test_text_long">Магазинге уaevaevaevaevaevavaervw vwrvwvwvw vwevwevwevwrvwwv wrvwvwvwevwevwevw vwevwevwevwvwevwevw vwevwevwevwevwevwevwvwv vwevwevwevwvwvavaevaevaevaevaevavavaevaevaevaevaevaevaevaevaevaevaevaecvaevaevaevaevбоvaevaevaevaevaevaevaevaedaecaavavavaevavavaркаccqcqeveveveqqevevaevaevaevaга упаковкага грузчике балдар кыздар керек мед книжка менен"</string>
+    <string name="test_text_short">Магазинге уaevaevaevaeva"</string>
+
+    <integer-array name="img_id_arr">
+        <item>@drawable/splash_test</item>
+        <item>@drawable/splash_test</item>
+        <item>@drawable/splash_test</item>
+        <item>@drawable/splash_test</item>
+    </integer-array>
+
+
+    <string name="menu_done">Выбрано</string>
+    <string name="select_max_toast">You can only select %d items in the list.</string>
+    <string name="select_limit_title">(%d/%d)</string>
+    <string name="subway">Метро:</string>
+    <string name="choose_station_of_subway">Выбор станции метро:</string>
+    <string name="category">Категория:</string>
+    <string name="category_of_ad">Категория объявления:</string>
+    <string name="name_of_ad">Название объявления:</string>
+    <string name="description_of_ad">Описание объявления:</string>
+    <string name="pay_for_work">Оплата, цена или вознаграждение:</string>
+    <string name="detail_addres">Точный адрес (Улица, дом):</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="not_accepted">Не указано</string>
+    <string name="about_user">О пользователе</string>
+    <string name="version_app">version 4.1</string>
+    <string name="apply">Применить</string>
+
+
+    <string name="app_id">ca-app-pub-4256551117237688~6320150164</string>
+    <string name="ad_mob_id">ca-app-pub-4256551117237688/5237512098</string>
+
+    <string name="test_ad_mob_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="login_incorrect">Введите корректный логин</string>
+    <string name="login_not_free_error">Логин занят</string>
+    <string name="email_incorrect">Введите корректный email</string>
+    <string name="email_or_phone_incorrect">Введите корректный email или номер</string>
+    <string name="phone_incorrect">Введите корректный номер</string>
+    <string name="passwords_not_same_error">Пароли не совпадают</string>
+    <string name="password_has_not_minimum_digit">-минимум одна цифра</string>
+    <string name="password_has_not_minimum_big_letter">-минимум один заглавный символ</string>
+    <string name="password_has_not_minimum_length">-не менее 6 символов</string>
+    <string name="password_incorrect">Введите корректный пароль</string>
+    <string name="code_incorrect">Введите корректный код</string>
+    <string name="auth_register_title">Чтобы зарегистрироваться\nзаполните все поля ввода</string>
+    <string name="auth_password_title">Пароль должен содержать латинские буквы, минимум одну цифру, минимум одну заглавную букву и не менее 6 символов.</string>
+    <string name="register_login_title">Логин</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="edit">Редактировать</string>
+    <string name="user_unauthorized">Не авторизован</string>
+    <string name="logout_from_account">Выйти из аккаунта</string>
+    <string name="login_to_account">Войти в аккаунт</string>
+    <string name="you_logged_out_from_account">Вы вышли из аккаунта</string>
+    <string name="profile_settings">Настройки профиля</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отменить</string>
+    <string name="send">Отправить</string>
+    <string name="active_notes">Активных объявлений:</string>
+    <string name="active_notes_title">Активныe объявления</string>
+    <string name="moderation_notes">Объявлений на модерации:</string>
+    <string name="current_town">Текущий город:</string>
+
+    <string name="is_your_city_is">Ваш город %s?</string>
+    <string name="city_info_title">Объявления будут отображаться по выбранному городу. Изменить выбранный город можно в профиле.</string>
+    <string name="error_location_not_determinet">Не удалось определить местоположение</string>
+    <string name="not_chosen">Не указано</string>
+    <string name="no_description">Нет описания</string>
+    <string name="open_gallery">Открыть галлерею</string>
+    <string name="open_camera">Открыть камеру</string>
+    <string name="station_name">Название станции</string>
+    <string name="selected_stations">Выбранные станции</string>
+    <string name="enter_station_name">Введите название</string>
+    <string name="add_phone">Добавить номер</string>
+    <string name="sub_category_title">Подкатегория</string>
+    <string name="enter_note_sub_category">Выберите подкатегорию</string>
+    <string name="work_comment">Примечание</string>
+    <string name="enter_text">Введите текст</string>
+    <string name="add_photo">Добавить фото</string>
+    <string name="select_photo">Выбрать фото</string>
+    <string name="photos_title">Фотографии</string>
+    <string name="special_offer">Специальное предложение</string>
+    <string name="call">Позвонить</string>
+    <string name="write_on_whatsapp">Написать в whatsapp</string>
+    <string name="change_password_title">Смена пароля</string>
+    <string name="change_login_title">Смена логина</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="do_continue">Продолжить</string>
+    <string name="new_login">Новый логин</string>
+    <string name="login_success_changed">Логин успешно изменен</string>
+    <string name="data_success_updated">Данные успешно сохранены</string>
+
+
+    <string-array name="custom_months">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+
+    <plurals name="seconds_timer">
+        <item quantity="zero">%d секунд</item>
+        <item quantity="one">%d секунду</item>
+        <item quantity="two">%d секунды</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+        <item quantity="other">%d секунд</item>
+    </plurals>
+    <plurals name="minutes_timer">
+        <item quantity="zero">%d минут</item>
+        <item quantity="one">%d минуту</item>
+        <item quantity="two">%d минуты</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минуты</item>
+        <item quantity="other">%d минуты</item>
+    </plurals>
+
+    <string name="com_vk_sdk_AppId">org.otunjargych.tamtam</string>
+    <string name="confirm_login">Подтверждение %s</string>
+    <string name="confirmation_code">Код подтверждения</string>
+    <string name="enter_code">Введите код</string>
+
+
+    <string name="email_confirmation_info">На вашу почту %s отправлено письмо с кодом из 6 цифр. Введите его для подтверждения.\n Если не нашли письмо во входящих, то возможно письмо попало в спамы.</string>
+    <string name="phone_confirmation_info">На ваш номер %s отправлено SMS с кодом из 6 цифр. Введите его для подтверждения.</string>
+    <string name="send_again">Отправить повторно</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="again_send_possible_after_text">Повторная отправка возможна через %s</string>
+    <string name="change_town">Изменить город</string>
+    <string name="user_did_not_add_image">Пользователь не добавил фото</string>
+    <string name="same_notes_title">Похожие объявления</string>
+    <string name="no_result_found">Нет результатов</string>
+    <string name="remove_all_active">Удалить активные</string>
+    <string name="remove_all_inactive">Удалить не активные</string>
+    <string name="user_image_success_updated">Фото изменено</string>
+    <string name="moderation_notes_title">Объявления на проверке</string>
+    <string name="inactive_notes_title">Не активные объявления</string>
+    <string name="note_status_not_active">Не активно</string>
+    <string name="note_status_on_moderation">На проверке</string>
+    <string name="note_complaint">Жалоба</string>
+    <string name="enter_complaint_text">Введите текст</string>
+
+
+</resources>

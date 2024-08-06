@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="bottom_app_bar_height">56dp</dimen>
+    <dimen name="bottom_app_bar_fab_cradle_corner_radius">32dp</dimen>
+    <dimen name="bottom_app_bar_fab_cradle_margin">8dp</dimen>
+    <dimen name="bottom_app_bar_logo_size">32dp</dimen>
+
+    <dimen name="chip_icon_diameter">32dp</dimen>
+
+    <dimen name="text_input_hint_size">15sp</dimen>
+
+    <dimen name="bottom_nav_icon_size">22dp</dimen>
+
+    <dimen name="note_detail_margin_horizontal_">12dp</dimen>
+</resources>

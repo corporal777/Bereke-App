@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splash_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="org.wilderkek.bereke.ui.auth.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/login_to_home"
+            app:destination="@+id/home_fragment"
+            app:popUpTo="@id/nav_graph" />
+
+        <action
+            android:id="@+id/login_to_profile"
+            app:destination="@+id/profile_fragment"
+            app:popUpTo="@id/nav_graph" />
+
+        <action
+            android:id="@+id/login_to_register"
+            app:destination="@+id/register_fragment" />
+
+        <argument
+            android:name="fromNote"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <argument
+            android:name="fromProfile"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="org.wilderkek.bereke.ui.auth.register.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/register_to_home"
+            app:destination="@+id/home_fragment"
+            app:popUpTo="@id/nav_graph" />
+
+        <action
+            android:id="@+id/register_to_profile"
+            app:destination="@+id/profile_fragment"
+            app:popUpTo="@id/nav_graph" />
+
+        <argument
+            android:name="fromNote"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <argument
+            android:name="fromProfile"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="org.wilderkek.bereke.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="org.wilderkek.bereke.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile_settings_fragment"
+        android:name="org.wilderkek.bereke.ui.profileSettings.ProfileSettingsFragment"
+        android:label="ProfileSettingsFragment"
+        tools:layout="@layout/fragment_profile_settings" />
+
+    <fragment
+        android:id="@+id/town_fragment"
+        android:name="org.wilderkek.bereke.ui.town.TownFragment"
+        android:label="TownFragment"
+        tools:layout="@layout/fragment_town" />
+
+    <fragment
+        android:id="@+id/create_note_fragment"
+        android:name="org.wilderkek.bereke.ui.createNote.CreateNoteFragment"
+        android:label="CreateNoteFragment"
+        tools:layout="@layout/fragment_create_note" />
+
+    <fragment
+        android:id="@+id/stories_fragment"
+        android:name="org.wilderkek.bereke.ui.stories.StoriesFragment"
+        android:label="StoriesFragment"
+        tools:layout="@layout/fragment_stories">
+
+
+        <argument
+            android:name="story"
+            app:argType="org.wilderkek.bereke.model.response.StoriesModel"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/splash_fragment"
+        android:name="org.wilderkek.bereke.ui.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash" />
+
+    <fragment
+        android:id="@+id/my_notes_fragment"
+        android:name="org.wilderkek.bereke.ui.my.MyNotesFragment"
+        android:label="MyNotesFragment"
+        tools:layout="@layout/fragment_my_notes" />
+
+    <fragment
+        android:id="@+id/favorite_notes_fragment"
+        android:name="org.wilderkek.bereke.ui.favoriteNotes.FavoriteNotesFragment"
+        android:label="FavoriteNotesFragment"
+        tools:layout="@layout/fragment_favorite_notes" />
+
+    <fragment
+        android:id="@+id/note_detail_fragment"
+        android:name="org.wilderkek.bereke.ui.detailNote.NoteDetailFragment"
+        android:label="NoteDetailFragment"
+        tools:layout="@layout/fragment_note_detail">
+
+        <argument
+            android:name="noteId"
+            app:argType="string"
+            app:nullable="false" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/full_screen_images_fragment"
+        android:name="org.wilderkek.bereke.ui.detailNote.fullScreenImages.FullScreenImagesFragment"
+        android:label="FullScreenImagesFragment"
+        tools:layout="@layout/fragment_full_screen_images">
+        <argument
+            android:name="images"
+            app:argType="org.wilderkek.bereke.ui.detailNote.fullScreenImages.data.FullImagesData"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/edit_note_fragment"
+        android:name="org.wilderkek.bereke.ui.editNote.EditNoteFragment"
+        android:label="EditNoteFragment"
+        tools:layout="@layout/fragment_create_note">
+
+        <argument
+            android:name="noteId"
+            app:argType="string"
+            app:nullable="false" />
+
+    </fragment>
+
+</navigation>
